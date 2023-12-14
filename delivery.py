@@ -29,4 +29,12 @@ class Product:
         self.name = name
 
 
+class Deliveri:
+    def __init__(self, delivery_speed: int):
+        self.delivery_speed = delivery_speed
+
+
+    def calculate_cost(self,product: Product) -> float:
+        return product.price * 0.01 + product.weiht * 0. 5
+
 
