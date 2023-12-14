@@ -47,7 +47,12 @@ class Promocode:
     discount: int
 
     @classmethod
-    def load_from_json(cls, json_path: str) -> List["PromoCodeData"]:
-        with open(json_path, "r") as file:
+    def load_from_json(cls, filename: str) -> List["Promocode"]:
+        with open("promocodes.json", "r") as file:
             data = json.load(file)
             return [cls(code=item["code"], discount=item["discount"]) for item in data]
+
+
+# class InternationalMixin:
+pr = Promocode
+print(pr.load_from_json("promocodes.json"))
