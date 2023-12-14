@@ -35,6 +35,19 @@ class Deliveri:
 
 
     def calculate_cost(self,product: Product) -> float:
-        return product.price * 0.01 + product.weiht * 0. 5
+        return product.price * 0.01 + product.weiht * 0.05
 
 
+@dataclass
+class Promocode:
+    """
+    Датакласс хранит промокоды
+    """
+    code: str
+    discount: int
+
+    @classmethod
+    def load_from_json(cls, json_path: str) -> List["PromoCodeData"]:
+        with open(json_path, "r") as file:
+            data = json.load(file)
+            return [cls(code=item["code"], discount=item["discount"]) for item in data]
