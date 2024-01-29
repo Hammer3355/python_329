@@ -106,7 +106,7 @@
 #   identity TEXT UNIQUE
 # );
 #
-# 6. Запрос на заполнение таблиц уникальными значениями из таблицы MarvelCharacters:
+# Запрос на заполнение таблиц уникальными значениями из таблицы MarvelCharacters:
 # INSERT INTO Sex (name)
 # SELECT DISTINCT SEX FROM MarvelCharacters;
 #
@@ -124,3 +124,26 @@
 #
 # INSERT INTO Identity (identity)
 # SELECT DISTINCT identify FROM MarvelCharacters;
+#
+# Создание таблицы с внешними ключами
+# CREATE TABLE MarvelCharacters_New (
+#     id INTEGER PRIMARY KEY AUTOINCREMENT,
+#     page_id INTEGER,
+#     name TEXT,
+#     urlslug TEXT,
+#     identity_id INTEGER,
+#     align_id INTEGER,
+#     eye_id INTEGER,
+#     hair_id INTEGER,
+#     sex_id INTEGER,
+#     status_id INTEGER,
+#     APPEARANCES INTEGER,
+#     FIRST_APPEARANCE TEXT,
+#     Year INTEGER,
+#     FOREIGN KEY (identity_id) REFERENCES Identity(id),
+#     FOREIGN KEY (align_id) REFERENCES Alignment(id),
+#     FOREIGN KEY (eye_id) REFERENCES EyeColor(id),
+#     FOREIGN KEY (hair_id) REFERENCES HairColor(id),
+#     FOREIGN KEY (sex_id) REFERENCES Sex(id),
+#     FOREIGN KEY (status_id) REFERENCES LivingStatus(id)
+# );
