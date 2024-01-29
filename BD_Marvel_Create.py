@@ -19,7 +19,7 @@
 # Создаем новую таблицу MarvelCharacters_new с дополнительным полем уникального id записи
 # "id INTEGER PRIMARY KEY AUTOINCREMENT".
 
-# CREATE TABLE MarvelCharacters (
+# CREATE TABLE MarvelCharacters_new (
 #     id INTEGER PRIMARY KEY AUTOINCREMENT
 #     page_id           INTEGER,
 #     name              TEXT,
