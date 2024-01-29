@@ -20,6 +20,7 @@
 # "id INTEGER PRIMARY KEY AUTOINCREMENT".
 
 # CREATE TABLE MarvelCharacters (
+#     id INTEGER PRIMARY KEY AUTOINCREMENT
 #     page_id           INTEGER,
 #     name              TEXT,
 #     urlslug           TEXT,
@@ -34,7 +35,36 @@
 #     FIRST_APPEARANCES TEXT,
 #     Year
 # );
-
-
 #
+# Перенос данных из MarvelCharacters в MarvelCharacters_new
+# INSERT INTO MarvelCharacters_new(
+#      page_id,
+#      name,
+#      urlslug,
+#      identify,
+#      ALIGN,
+#      EYE,
+#      HAIR,
+#      SEX,
+#      GSM,
+#      ALIVE,
+#      APPEARANCES,
+#      FIRST_APPEARANCE,
+#      Year
+# )
+# SELECT
+#     page_id,
+#     name,
+#     urlslug,
+#     identify,
+#     ALIGN,
+#     EYE,
+#     HAIR,
+#     SEX,
+#     GSM,
+#     ALIVE,
+#     APPEARANCES,
+#     FIRST_APPEARANCE,
+#     Year
+# FROM MarvelCharacters;
 
