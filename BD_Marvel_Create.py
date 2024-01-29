@@ -68,3 +68,5 @@
 #     Year
 # FROM MarvelCharacters;
 
+# Удаление таблицы MarvelCharacters
+# DROP TABLE MarvelCharacters;
