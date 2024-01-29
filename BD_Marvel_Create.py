@@ -70,3 +70,7 @@
 
 # Удаление таблицы MarvelCharacters
 # DROP TABLE MarvelCharacters;
+
+# Переименование таблицы MarvelCharacters_new в MarvelCharacters
+# ALTER TABLE MarvelCharacters_new
+# RENAME TO MarvelCharacters;
