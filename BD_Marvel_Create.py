@@ -105,3 +105,22 @@
 #   identity_id INTEGER PRIMARY KEY AUTOINCREMENT,
 #   identity TEXT UNIQUE
 # );
+#
+# 6. Запрос на заполнение таблиц уникальными значениями из таблицы MarvelCharacters:
+# INSERT INTO Sex (name)
+# SELECT DISTINCT SEX FROM MarvelCharacters;
+#
+# INSERT INTO EyeColor (color)
+# SELECT DISTINCT EYE FROM MarvelCharacters;
+#
+# INSERT INTO HairColor (color)
+# SELECT DISTINCT HAIR FROM MarvelCharacters;
+#
+# INSERT INTO Alignment (name)
+# SELECT DISTINCT ALIGN FROM MarvelCharacters;
+#
+# INSERT INTO LivingStatus (status)
+# SELECT DISTINCT ALIVE FROM MarvelCharacters;
+#
+# INSERT INTO Identity (identity)
+# SELECT DISTINCT identify FROM MarvelCharacters;
