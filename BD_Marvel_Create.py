@@ -147,3 +147,9 @@
 #     FOREIGN KEY (sex_id) REFERENCES Sex(id),
 #     FOREIGN KEY (status_id) REFERENCES LivingStatus(id)
 # );
+# Удаление таблицы MarvelCharacters
+# DROP TABLE MarvelCharacters;
+#
+# Переименование таблицы MarvelCharacters_new в MarvelCharacters
+# ALTER TABLE MarvelCharacters_new
+# RENAME TO MarvelCharacters;
