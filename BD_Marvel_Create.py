@@ -74,3 +74,34 @@
 # Переименование таблицы MarvelCharacters_new в MarvelCharacters
 # ALTER TABLE MarvelCharacters_new
 # RENAME TO MarvelCharacters;
+
+# Создание таблиц для уникальных значений
+# CREATE TABLE Sex (
+#   sex_id INTEGER PRIMARY KEY AUTOINCREMENT,
+#   name TEXT UNIQUE
+# );
+#
+# CREATE TABLE EyeColor (
+#   eye_id INTEGER PRIMARY KEY AUTOINCREMENT,
+#   color TEXT UNIQUE
+# );
+#
+# CREATE TABLE HairColor (
+#   hair_id INTEGER PRIMARY KEY AUTOINCREMENT,
+#   color TEXT UNIQUE
+# );
+#
+# CREATE TABLE Alignment (
+#   align_id INTEGER PRIMARY KEY AUTOINCREMENT,
+#   name TEXT UNIQUE
+# );
+#
+# CREATE TABLE LivingStatus (
+#   status_id INTEGER PRIMARY KEY AUTOINCREMENT,
+#   status TEXT UNIQUE
+# );
+#
+# CREATE TABLE Identity (
+#   identity_id INTEGER PRIMARY KEY AUTOINCREMENT,
+#   identity TEXT UNIQUE
+# );
